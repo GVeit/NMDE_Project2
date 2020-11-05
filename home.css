@@ -768,7 +768,7 @@ input[type="text"]::placeholder
     margin-left: 20px;
     margin-top: 20px;
     text-align: center;
-}
+  }
 
 
 .navMenu{
@@ -1161,7 +1161,7 @@ input[type="text"]::placeholder
 .directions{
   font-family: textFont;
   color: #434343;
-  font-size: 1em;
+  font-size: 20px;
   margin-left:40px;
   margin-right:40px;
   float:left;
@@ -1183,3 +1183,71 @@ input[type="text"]::placeholder
 .instructions ol li {
   margin: 0 0 3px 0;
 }
+
+.grid-review {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Update reviewIMG";
+}
+
+.reviewIMG { grid-area: reviewIMG; }
+
+.Update { grid-area: Update; }
+
+
+
+.grid-about {
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". RosieIMG ."
+    ". RosieBio ."
+    ". ContactUs .";
+}
+.RosieIMG { grid-area: RosieIMG; }
+.RosieBio { grid-area: RosieBio; }
+.ContactUs { grid-area: ContactUs; }
+
+.RosieIMG img{
+  max-width:1000px;
+  border-radius: 24px;
+  margin-top: 50px;
+  width:85%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.rosieWrapper{
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.RosieBio h1{
+  font-family: headingFont;
+  color: #CE3D2A;
+  font-size: 3em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.RosieBio h2{
+  font-family: headingFont;
+  color: #CE3D2A;
+  float: right;
+}
+
+.RosieBio p{
+  font-family: textFont;
+  font-size: .9em;
+}
+
+
+

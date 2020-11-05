@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Rosie's Recipes</title>
-    <link rel="stylesheet" href="home.css" type="text/css">
-    <script src="src/loader.js" type="module"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Banana Bread</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="home.css" />
+      </head>
 <body>    
     
     <div class="topnav" id="myTopnav">
@@ -28,7 +31,7 @@
                         </form>
                     </div>
                 </a>
-            <a href="#about">About Rosie</a>
+            <a href="about.html">About Rosie</a>
             <div class="dropdown">
                 <button class="dropbtn">All Recipes
                 <i class="fa fa-caret-down"></i>
@@ -42,7 +45,7 @@
                 <a href="#">Sweets & Cakes</a>
                 </div>
             </div>
-            <a href="index.html" class="active">Home</a>
+            <a href="index.html">Home</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div> 
 
@@ -50,7 +53,15 @@
     <div class="grid-intro">
         <div class="mainTitles">
                 <h1>Grandma Rosie's Banana Bread</h1>
-                <p>Home/Recipes/Sweet & Cakes</p>
+                <div class="grid-review">
+                        <div class="reviewIMG">
+                                <img src="images/Reviews.png" style="width: 100%;">
+                        </div>
+                        <div class="Update">
+                                <p>Home/Recipes/Sweet & Cakes</p>
+                                <p style="color:#5282A1;">by: Grandma Rosie | 09.23.07 | Updated: 12.23.20</p>
+                        </div>
+                </div>
             
                 <p>After my roommates and I bought some bananas and then proceeded to forget about them for about a week, banana bread was the route for us!</p>
                 <p>At the time, I didn't have the recipe, or any of Grandma Rosie's recipes for that matter, so I used a recipe that I found online...</p>
@@ -70,7 +81,7 @@
     
 
                 <label class="container"><p>1 stick of butter</p>
-                    <input type="checkbox" checked="checked">
+                    <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
                 <label class="container"><p>1 cup of sugar</p>
@@ -86,7 +97,7 @@
                     <span class="checkmark"></span>
                 </label>
                 <label class="container"><p>1 tablespoon of water</p>
-                        <input type="checkbox" checked="checked">
+                        <input type="checkbox">
                         <span class="checkmark"></span>
                     </label>
                     <label class="container"><p>1 teaspoon of vanilla extract</p>
@@ -102,7 +113,7 @@
                     <span class="checkmark"></span>
                 </label>
                 <label class="container"><p>A dash of salt</p>
-                    <input type="checkbox" checked="checked">
+                    <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
                 <label class="container"><p>1-2 teaspoon of ground cinnamon</p>
@@ -130,7 +141,156 @@
                     </ol>
             </div>
         </div>
-    </div>        
+    </div> 
+    <div class="moreRecipes" style="height: 375px;">
+        <h1>Related Recipes</h1>
+                    <div class="grid-moreRecipe">
+                        <div class="recipe1">
+                            <div class="moreRecipeIcons1">
+                                <a href="#">
+                                    <img src="images/macCheese.png" style="max-width:100px; border-radius: 14px;"></img>
+                                </a>
+                                <p>SAVORY ENTRE</p>
+                                <h4>Baked Mac & Cheese</h4>
+                            </div>
+                        </div>
+                        <div class="recipe2">
+                            <div class="moreRecipeIcons1">
+                                <a href="#">
+                                    <img src="images/peachCobbler.png" style="max-width:100px; border-radius: 14px;"></img>
+                                </a>
+                                <p>SWEET PASTRY</p>
+                                <h4>Peach Cobbler</h4>
+                            </div>
+                        </div>
+                        <div class="recipe3">
+                            <div class="moreRecipeIcons1">
+                                <a href="#">
+                                    <img src="images/hamentashen.png" style="max-width:100px; border-radius: 14px;"></img>
+                                </a>
+                                <p>SWEET PASTRY</p>
+                                <h4>Grandma Ann's Hamentashen</h4>
+                            </div>
+                        </div>
+                    </div>
+        <div class="marquee">
+            <div class="marquee--inner">
+                <span>
+                    <div class="item">
+                        <div class="moreRecipeIcons">
+                            <a href="#">
+                                <img src="images/macCheese.png" style="max-width:230px; border-radius: 24px;"></img>
+                            </a>
+                            <p>SAVORY ENTRE</p>
+                            <h4>Baked Mac & Cheese</h4>
+                        </div>
+                    </div>
+                </span>
+                <span>
+                    <div class="item">
+                        <div class="moreRecipeIcons">
+                            <a href="#">
+                                <img src="images/peachCobbler.png" style="max-width:230px; border-radius: 24px;"></img>
+                            </a>
+                            <p>SWEET PASTRY</p>
+                            <h4>Peach Cobbler</h4>
+                        </div>
+                    </div>
+                </span>
+                <span>
+                    <div class="item">
+                        <div class="moreRecipeIcons">
+                            <a href="#">
+                                <img src="images/hamentashen.png" style="max-width:230px; border-radius: 24px;"></img>
+                            </a>
+                            <p>SWEET PASTRY</p>
+                            <h4>Grandma Ann's Hamentashen</h4>
+                        </div>
+                    </div>
+                </span>
+                <span>
+                    <div class="item">
+                        <div class="moreRecipeIcons">
+                            <a href="#">
+                                <img src="images/macCheese.png" style="max-width:230px; border-radius: 24px;"></img>
+                            </a>
+                            <p>SAVORY ENTRE</p>
+                            <h4>Baked Mac & Cheese</h4>
+                        </div>
+                    </div>
+                </span>
+                <span>
+                    <div class="item">
+                        <div class="moreRecipeIcons">
+                            <a href="#">
+                                <img src="images/peachCobbler.png" style="max-width:230px; border-radius: 24px;"></img>
+                            </a>
+                            <p>SWEET PASTRY</p>
+                            <h4>Peach Cobbler</h4>
+                        </div>
+                    </div>
+                </span>
+                <span>
+                    <div class="item">
+                        <div class="moreRecipeIcons">
+                            <a href="#">
+                                <img src="images/hamentashen.png" style="max-width:230px; border-radius: 24px;"></img>
+                            </a>
+                            <p>SWEET PASTRY</p>
+                            <h4>Grandma Ann's Hamentashen</h4>
+                        </div>
+                    </div>
+                </span>
+                <span>
+                    <div class="item">
+                        <div class="moreRecipeIcons">
+                            <a href="#">
+                                <img src="images/macCheese.png" style="max-width:230px; border-radius: 24px;"></img>
+                            </a>
+                            <p>SAVORY ENTRE</p>
+                            <h4>Baked Mac & Cheese</h4>
+                        </div>
+                    </div>
+                </span>
+                <span>
+                    <div class="item">
+                        <div class="moreRecipeIcons">
+                            <a href="#">
+                                <img src="images/peachCobbler.png" style="max-width:230px; border-radius: 24px;"></img>
+                            </a>
+                            <p>SWEET PASTRY</p>
+                            <h4>Peach Cobbler</h4>
+                        </div>
+                    </div>
+                </span>
+                <span>
+                    <div class="item">
+                        <div class="moreRecipeIcons">
+                            <a href="#">
+                                <img src="images/hamentashen.png" style="max-width:230px; border-radius: 24px;"></img>
+                            </a>
+                            <p>SWEET PASTRY</p>
+                            <h4>Grandma Ann's Hamentashen</h4>
+                        </div>
+                    </div>
+                </span>
+            
+            </div>
+        </div>
+        <button class="viewAllRecipesBTN">View All Recipes</button>
+    </div>
+
+
+    <div class="searchBy">
+        <h1>Search Recipes By Meal</h1>
+        <ul class="navMenu">
+            <li><a href="/" class="nounderline"><img src="images/breakfastIcon.png" style="width:10vw; max-width:100px;"><p>Breakfast</p></a></li>
+            <li><a href="/" class="nounderline"><img src="images/lunchIcon.png" style="width:10vw; max-width:100px;"><p>Lunch</p></a></li>
+            <li><a href="/" class="nounderline"><img src="images/dinnerIcon.png" style="width:10vw; max-width:100px;"><p>Dinner</p></a></li>
+            <li><a href="/" class="nounderline"><img src="images/dessertIcon.png" style="width:10vw; max-width:100px;"><p>Dessert</p></a></li>
+            <li><a href="/" class="nounderline"><img src="images/snackIcon.png" style="width:10vw; max-width:100px;"><p>Snack</p></a></li>
+        </ul>
+    </div>       
     <div class="footer" style="margin-top:-15px">
         <p>© 2020</p>
     </div>
