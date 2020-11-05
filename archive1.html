@@ -192,6 +192,33 @@
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script>
+        let slider = document.getElementById("slider");
+        let selectedValue = document.getElementById("selectedValue");
+        let selectedValue2 = document.getElementById("selectedValue2");
+
+        selectedValue.innerHTML = slider.value;
+        selectedValue2.innerHTML = slider2.value;
+
+        slider.oninput = function(){
+            selectedValue.innerHTML = this.value;
+            
+        }
+
+        slider2.oninput = function(){
+            
+            selectedValue2.innerHTML = this.value;
+        }
+
+        function openMenu() {  
+            var navMain = document.getElementById('navMenuId');  
+            if (navMain.className=== 'navMenu') {    
+                navMain.className += ' mobileView';  
+            } 
+            else {    
+                navMain.className = 'navMenu';  
+            }
+        }
+
         function openMenu() {  
             var navMain = document.getElementById('navMenuId');  
             if (navMain.className=== 'navMenu') {    
