@@ -1550,7 +1550,7 @@ input[type="text"]::placeholder
   font-family: textFont;
 }
 
-.slidecontainer {
+.sliders {
   display:inline-block;
 }
 
