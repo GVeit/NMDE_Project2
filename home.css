@@ -1159,7 +1159,7 @@ input[type="text"]::placeholder
   grid-template-areas:
     "filter filterIMGS";
 }
-.filter { grid-area: filter; }
+.filter { grid-area: filter; padding: 20px; }
 .filterIMGS { grid-area: filterIMGS; }
 
 
@@ -1214,3 +1214,357 @@ input[type="text"]::placeholder
   text-align: center;
   text-decoration: none !important;
 }
+
+.filter h2 {
+  color: #5282A1;
+  font-size: 1.5em;
+  font-family: textFont;
+}
+
+
+
+.containerF {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.containerF p {
+  margin-left: 10px;
+  font-family: textFont;
+}
+
+/* Hide the browser's default checkbox */
+.containerF input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  border: 3px solid #CE3D2A;
+  border-radius: 6px;
+}
+
+/* On mouse-over, add a grey background color */ 
+.containerF:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerF input:checked ~ .checkmark {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containerF input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerF .checkmark:after {
+  left: 3px;
+  top: -1px;
+  width: 5px;
+  height: 10px;
+  border: solid #9BBFAD;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+
+
+.previous {
+  background-color: #9BBFAD;
+  color: black;
+}
+
+.next {
+  background-color: #9BBFAD;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.nextPage{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-family: textFont;
+  font-size:12px;
+  position: relative;
+}
+
+.nextPage a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  display: inline-block;
+}
+
+.nextPage a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nextPage h4{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-family: textFont;
+  font-size:12px;
+  text-align: center;
+  text-decoration: none !important;
+  width:100px;
+}
+
+
+
+
+.tb1
+{
+    display: table;
+    width: 100%;
+}
+
+.td1
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+input, button
+{
+    color: rgb(0, 0, 0);
+    font-family: Nunito;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    width: 150px;
+} 
+
+#cover1{
+  padding: 0px;
+  margin: 0px auto 0 auto;
+  border-radius: 24px;
+  transform: scale(0.6);
+  border: solid 3px #9BBFAD;
+  font-family: textFont;
+  position: relative;
+  top: -10px;
+  left: 56px;
+  width: 70%;
+  max-width: 1000px;
+}
+
+form
+{
+    height: 50px;
+}
+
+input[type="text"]
+{
+    width: 250px;
+    height: 40px;
+    font-size: 27.2px;
+    line-height: 1px;
+    position: relative;
+    top: -22px;
+    right: -15px;
+    font-family: textFont;
+
+}
+
+input[type="text"]::placeholder
+{
+    color: #9BBFAD;
+    font-family: textFont;
+}
+
+#s-cover1
+{
+    width: 1px;
+    padding-left: 35px;
+}
+
+.searchbutton1
+{
+    position: relative;
+    display: block;
+    width: 84px;
+    height: 96px;
+    cursor: pointer;
+    transform: scale(0.4);
+    position: relative;
+    top: -24px;
+    right: -12px;
+}
+
+#s-circle1
+{
+    position: relative;
+    top: -8px;
+    left: 0;
+    width: 43px;
+    height: 43px;
+    margin-top: 0;
+    border-width: 15px;
+    border: 15px solid #9BBFAD;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: 0.5s ease all;
+}
+
+.searchbutton1 span
+{
+    position: absolute;
+    top: 68px;
+    left: 43px;
+    display: block;
+    width: 45px;
+    height: 15px;
+    background-color: transparent;
+    border-radius: 10px;
+    transform: rotateZ(52deg);
+    transition: 0.5s ease all;
+}
+
+.searchbutton1 span:before, .searchbutton1 span:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45px;
+    height: 15px;
+    background-color: #9BBFAD;
+    border-radius: 10px;
+    transform: rotateZ(0);
+    transition: 0.5s ease all;
+}
+
+#s-cover1:hover #s-circle1
+{
+    top: -1px;
+    width: 67px;
+    height: 15px;
+    border-width: 0;
+    background-color: #9BBFAD;
+    border-radius: 20px;
+}
+
+#s-cover1:hover span
+{
+    top: 50%;
+    left: 56px;
+    width: 25px;
+    margin-top: -9px;
+    transform: rotateZ(0);
+}
+
+#s-cover1:hover .searchbutton1 span:before
+{
+    bottom: 11px;
+    transform: rotateZ(52deg);
+}
+
+#s-cover1:hover .searchbutton1 span:after
+{
+    bottom: -11px;
+    transform: rotateZ(-52deg);
+}
+#s-cover1:hover .searchbutton1 span:before, #s-cover1:hover .searchbutton1 span:after
+{
+    right: -6px;
+    width: 40px;
+    background-color: #9BBFAD;
+}
+
+
+
+
+@media screen and (max-width: 750px){
+
+.grid-filter {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "filter"
+     "filterIMGS";
+}
+
+#cover1{
+  display:none;
+}
+
+.MealFilter{
+  float:left;
+  width:45%;
+}
+
+.DietaryFilter{
+  float:right;
+  width:45%;
+}
+
+.MealFilter h2 {
+  color: #5282A1;
+  font-size: 1em;
+  font-family: textFont;
+}
+
+.DietaryFilter h2 {
+  color: #5282A1;
+  font-size: 1em;
+  font-family: textFont;
+}
+
+.slidecontainer {
+  display:inline-block;
+}
+
+.slide1{
+  float:left;
+  width:45%;
+}
+
+.slide2{
+  float:right;
+  width:45%;
+}
+
+
+
+}
+
