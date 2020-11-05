@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Rosie's Recipes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="home.css" />
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+            <div class="navLogo">
+                <a href="#home"><img src="images/roiseLogo.png" style="width: 180px;"></a>
+            </div>
+            <a href="#">
+                    <div id="cover">
+                        <form method="get" action="">
+                            <div class="tb">
+                                <div class="td"><input type="text" placeholder="Search" required></div>
+                                <div class="td" id="s-cover">
+                                  <button class="searchbutton" type="submit">
+                                    <div id="s-circle"></div>
+                                    <span></span>
+                                  </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </a>
+            <a href="about.html">About Rosie</a>
+            <div class="dropdown">
+              <button class="dropbtn">All Recipes
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Breakfast</a>
+                <a href="#">Lunch</a>
+                <a href="#">Dinner</a>
+                <a href="#">Salads</a>
+                <a href="#">Sides</a>
+                <a href="#">Sweets & Cakes</a>
+              </div>
+            </div>
+            <a href="index.html" class="active">Home</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          </div> 
+
+          <div class="grid-filter">
+                    <div class="filter">
+                        <div class="listOfFilter">
+                                <h2>Filter</h2>
+                                <h2>Meal</h2>
+                
+                                <label class="containerF"><p>Breakfast</p>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="containerF"><p>Lunch</p>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="containerF"><p>Dinner</p>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="containerF"><p>Dessert</p>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="containerF"><p>Snack</p>
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                </label>
+                            <h2>Dietary Restraints</h2>
+                
+                            <label class="containerF"><p>Breakfast</p>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="containerF"><p>Lunch</p>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="containerF"><p>Dinner</p>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="containerF"><p>Dessert</p>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="containerF"><p>Snack</p>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="slidecontainer">
+                                <p>Prep Time:</p>
+                                <input type="range" min="1" max="120" value="30" class="slider" id="myRange">
+                                <p>Calories per Serving:</p>
+                                <input type="range" min="1" max="1500" value="200" class="slider" id="myRange">
+                        </div>
+                    </div>
+                
+                <div class="filterIMGS">
+                    <div class="grid-f">
+                        <div class="f1"> 
+                            <a href="#">
+                                <img src="images/banana-bread.jpg" style="max-width:200px; border-radius: 12px;"></img>
+                            </a>
+                            <h4>Banana Bread</h4>
+                        </div>
+                        <div class="f2">
+                            <a href="#">
+                                <img src="images/banana-bread.jpg" style="max-width:200px; border-radius: 12px;"></img>
+                            </a>
+                            <h4>Banana Bread</h4>
+                        </div>
+                        <div class="f3">
+                            <a href="#">
+                                <img src="images/banana-bread.jpg" style="max-width:200px; border-radius: 12px;"></img>
+                            </a>
+                            <h4>Banana Bread</h4>
+                        </div>
+                        <div class="f4">
+                            <a href="#">
+                                <img src="images/banana-bread.jpg" style="max-width:200px; border-radius: 12px;"></img>
+                            </a>
+                            <h4>Banana Bread</h4>
+                        </div>
+                        <div class="f5">
+                            <a href="#">
+                                <img src="images/banana-bread.jpg" style="max-width:200px; border-radius: 12px;"></img>
+                            </a>
+                            <h4>Banana Bread</h4>
+                        </div>
+                        <div class="f6">
+                            <a href="#">
+                                <img src="images/banana-bread.jpg" style="max-width:200px; border-radius: 12px;"></img>
+                            </a>
+                            <h4>Banana Bread</h4>
+                        </div>
+                        <div class="f7">
+                            <a href="#">
+                                <img src="images/banana-bread.jpg" style="max-width:200px; border-radius: 12px;"></img>
+                            </a>
+                            <h4>Banana Bread</h4>
+                        </div>
+                        <div class="f8">
+                            <a href="#">
+                                <img src="images/banana-bread.jpg" style="max-width:200px; border-radius: 12px;"></img>
+                            </a>
+                            <h4>Banana Bread</h4>
+                        </div>
+                        <div class="f9">
+                            <a href="#">
+                                <img src="images/banana-bread.jpg" style="max-width:200px; border-radius: 12px;"></img>
+                            </a>
+                            <h4>Banana Bread</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="footer">
+            <p>© 2020</p>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script>
+        function openMenu() {  
+            var navMain = document.getElementById('navMenuId');  
+            if (navMain.className=== 'navMenu') {    
+                navMain.className += ' mobileView';  
+            } 
+            else {    
+                navMain.className = 'navMenu';  
+            }
+        }
+
+
+
+        // duration of scroll animation
+        var scrollDuration = 300;
+        // paddles
+        var leftPaddle = document.getElementsByClassName('left-paddle');
+        var rightPaddle = document.getElementsByClassName('right-paddle');
+        // get items dimensions
+        var itemsLength = $('.item').length;
+        var itemSize = $('.item').outerWidth(true);
+        // get some relevant size for the paddle triggering point
+        var paddleMargin = 20;
+
+        // get wrapper width
+        var getMenuWrapperSize = function() {
+            return $('.menu-wrapper').outerWidth();
+        }
+        var menuWrapperSize = getMenuWrapperSize();
+        // the wrapper is responsive
+        $(window).on('resize', function() {
+            menuWrapperSize = getMenuWrapperSize();
+        });
+        // size of the visible part of the menu is equal as the wrapper size 
+        var menuVisibleSize = menuWrapperSize;
+
+        // get total width of all menu items
+        var getMenuSize = function() {
+            return itemsLength * itemSize;
+        };
+        var menuSize = getMenuSize();
+        // get how much of menu is invisible
+        var menuInvisibleSize = menuSize - menuWrapperSize;
+
+        // get how much have we scrolled to the left
+        var getMenuPosition = function() {
+            return $('.menu').scrollLeft();
+        };
+
+        // finally, what happens when we are actually scrolling the menu
+        $('.menu').on('scroll', function() {
+
+            // get how much of menu is invisible
+            menuInvisibleSize = menuSize - menuWrapperSize;
+            // get how much have we scrolled so far
+            var menuPosition = getMenuPosition();
+
+            var menuEndOffset = menuInvisibleSize - paddleMargin;
+
+            // show & hide the paddles 
+            // depending on scroll position
+            if (menuPosition <= paddleMargin) {
+                $(leftPaddle).addClass('hidden');
+                $(rightPaddle).removeClass('hidden');
+            } else if (menuPosition < menuEndOffset) {
+                // show both paddles in the middle
+                $(leftPaddle).removeClass('hidden');
+                $(rightPaddle).removeClass('hidden');
+            } else if (menuPosition >= menuEndOffset) {
+                $(leftPaddle).removeClass('hidden');
+                $(rightPaddle).addClass('hidden');
+        }
+
+            // print important values
+            $('#print-wrapper-size span').text(menuWrapperSize);
+            $('#print-menu-size span').text(menuSize);
+            $('#print-menu-invisible-size span').text(menuInvisibleSize);
+            $('#print-menu-position span').text(menuPosition);
+
+        });
+
+        // scroll to left
+        $(rightPaddle).on('click', function() {
+            $('.menu').animate( { scrollLeft: menuInvisibleSize}, scrollDuration);
+        });
+
+        // scroll to right
+        $(leftPaddle).on('click', function() {
+            $('.menu').animate( { scrollLeft: '0' }, scrollDuration);
+
+        });
+
+
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        } 
+    </script>
+  </body>
+</html>
